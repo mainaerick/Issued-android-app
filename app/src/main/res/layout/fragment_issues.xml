@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/page_padding"
+    android:orientation="vertical"
+    tools:context=".ui.Fragment.IssuesFragment">
+
+    <include layout="@layout/header"/>
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/issue_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_grid_child_count="1"
+        app:shimmer_demo_layout="@layout/load_issues"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        tools:listitem="@layout/list_issues"
+        />
+</LinearLayout>

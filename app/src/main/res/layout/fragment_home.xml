@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:padding="@dimen/page_padding"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/title_textsize"
+            android:fontFamily="@font/product_sans_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_home"
+            android:textSize="@dimen/subtitle_textsize"
+            android:fontFamily="@font/product_sans_bold"
+            android:layout_marginTop="@dimen/sub_subtitle_mt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday, 13th July 2022"
+            android:textSize="@dimen/sub_subtitle_textsize"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="@dimen/sub_subtitle_textsize"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginTop="29dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="@color/gray"
+                android:layout_marginRight="@dimen/page_padding"
+                app:cardElevation="0dp"
+                >
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="0dp"
+                >
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            app:cardBackgroundColor="@color/gray"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="0dp"
+            android:layout_marginTop="@dimen/page_padding">
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.AccountFragment"
+    android:padding="@dimen/page_padding"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="@dimen/title_textsize"
+                android:fontFamily="@font/product_sans_bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_account"
+                android:textSize="@dimen/subtitle_textsize"
+                android:fontFamily="@font/product_sans_bold"
+                android:layout_marginTop="@dimen/sub_subtitle_mt"
+                /></LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollIndicators="none"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:layout_marginTop="@dimen/sub_subtitle_mt"
+                    android:textColor="@color/gray"
+                    />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/background_circle"
+                    android:src="@drawable/ic_baseline_account_circle_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/sub_subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:layout_marginTop="@dimen/sub_subtitle_mt"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="johndoe@gmail.com"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/sub_subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:drawablePadding="48dp"
+                    app:drawableRightCompat="@drawable/ic_baseline_edit_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Details"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:layout_marginTop="@dimen/sub_subtitle_mt"
+                    android:textColor="@color/gray"
+                    />
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/page_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC Inc 14"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/sub_subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:drawablePadding="48dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_business_24" />
+                <TextView
+                    android:layout_marginTop="@dimen/page_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0740212762"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/sub_subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:drawablePadding="48dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_phone_24" />
+                <TextView
+                    android:layout_marginTop="@dimen/page_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manager"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/sub_subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:drawablePadding="48dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_man_24" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:layout_marginTop="@dimen/sub_subtitle_mt"
+                    android:layout_marginBottom="@dimen/page_padding"
+                    android:textColor="@color/gray"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="@dimen/sub_subtitle_textsize"
+                        android:fontFamily="@font/product_sans_bold"
+                        android:drawablePadding="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="@dimen/sub_subtitle_textsize"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:drawablePadding="48dp"
+                        android:inputType="textPassword"
+                        android:drawableRight="@drawable/ic_baseline_visibility_24"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="172dp"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Changed 2 weeks ago"
+                    android:textSize="@dimen/list_sub_sub_title"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textColor="@color/gray"
+                    android:drawablePadding="48dp"/>
+                <TextView
+                    android:id="@+id/changepass_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:background="@drawable/border_button"
+                    android:padding="@dimen/button_padding"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:textSize="@dimen/button_textsize"
+                    android:layout_marginTop="13dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

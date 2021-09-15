@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.IssiueViewActivity"
+    android:padding="@dimen/page_padding"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/page_padding">
+
+            <TextView
+                android:id="@+id/ticket_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/product_sans_bold"
+                android:text="HP Inkjet Not Responding."
+                android:textSize="@dimen/list_title" />
+
+            <TextView
+                android:id="@+id/ticket_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/product_sans_bold"
+                android:text="HKEW-342G"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:id="@+id/ticket_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/product_sans_bold"
+                android:text="Submitted 1 hour ago, 12th August 2021"
+                android:layout_marginTop="6dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="High Urgency"
+                    android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/list_subtitle"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:drawableLeft="@drawable/ic_baseline_error_24"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2 Attachments"
+                    android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/list_subtitle"
+                    android:fontFamily="@font/product_sans_bold"
+                    app:drawableLeftCompat="@drawable/ic_baseline_attachment_24" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assigned to Mark Miller"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:layout_marginTop="9dp"
+                android:textSize="@dimen/list_subtitle"
+                android:fontFamily="@font/product_sans_bold"
+                app:drawableLeftCompat="@drawable/ic_baseline_account_circle_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 minutes ago"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:layout_marginTop="6dp"
+                android:textSize="@dimen/list_subtitle"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingLeft="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loremlong"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/page_padding"
+                android:textSize="@dimen/long_text"
+                android:fontFamily="@font/product_sans_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="@dimen/page_padding">
+
+
+                <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                    android:id="@+id/recycler_attachment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    tools:listitem="@layout/list_attachment"
+                    android:orientation="horizontal"
+                    />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_baseline_download_24"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/page_padding">
+                <TextView
+                    android:id="@+id/remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remind Mark"
+                    android:background="@drawable/border_button"
+                    android:padding="@dimen/button_padding"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:textSize="@dimen/button_textsize"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="@dimen/page_padding"
+                    />
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="...More"
+                    android:background="@drawable/border_button"
+                    android:padding="@dimen/button_padding"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:textSize="@dimen/button_textsize"
+                    android:layout_marginTop="13dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

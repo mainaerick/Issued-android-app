@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/title_textsize"
+        android:fontFamily="@font/product_sans_bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_issues"
+        android:textSize="@dimen/subtitle_textsize"
+        android:fontFamily="@font/product_sans_regular"
+        android:layout_marginTop="@dimen/sub_subtitle_mt"
+        android:textStyle="bold"
+        android:id="@+id/page_title"
+        />
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_dark"
+        android:layout_marginTop="@dimen/page_padding"
+        android:layout_marginBottom="@dimen/page_padding"
+        />
+</LinearLayout>
